@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="header">
+        <div class="title">
+            <img src="./images/noun-disk-4922829.svg" alt="logo" class="logo">
+            <div class="nameTitle">Verx City</div>
+        </div>
+        <div class="credits">Photo by XX</div>
+    </div>
+    <main>
+        <section class="fontMain introTxt">
+            <p class=" fontMain topTxt">This is not a real online service! You know you need somwthing like this in your life to help you realize your deepest dreams. 
+                Sign up <span class="itali">now</span> to get started.</p>
+            <div class=" fontMain smallTxt">You <span class="itali">know</span> you want to.</div>
+        </section>
+
+        <form action="#" method="get" class="form">
+            <section class="frm">
+                <div class="fontMain formIntro">Let's do this!</div>
+                <div class="formInputs">
+                    <div class="email">
+                        <span class="invalidEmail">Provide correct e-mail address</span>
+                        <label for="userEmail" class="required">Enter your email address</label>
+                        <input type="email" id="userEmail" name="user[userEmail]" required="required" placeholder data-error="userEmail.error" tabindex="1" class="empty">
+                        <div class="emailLoading">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="emailCaret"></div>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <section class="formConfirm">
+            <div>
+                <button class="createBtn">Create Account</button>
+                <div class="accountQ">Already have an account?<a href="#">Log in</a></div>
+            </div>
+        </section>
+    </main>
+
+	<script src="index.js"></script>
+  </body>
+</html>
