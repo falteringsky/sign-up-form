@@ -26,28 +26,62 @@
             <section class="frm">
                 <div class="fontMain formIntro">Let's do this!</div>
                 <div class="formInputs">
-                    <div class="email">
-                        <span class="invalidEmail">Provide correct e-mail address</span>
-                        <label for="userEmail" class="required">Enter your email address</label>
-                        <input type="email" id="userEmail" name="user[userEmail]" required="required" placeholder data-error="userEmail.error" tabindex="1" class="empty">
-                        <div class="emailLoading">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="emailCaret"></div>
-                    </div>
+                    <ul>
+                        <li>
+                            <div class="firstName">
+                                <label for="fName">First Name:</label>
+                                <input type="text" placeholder="First Name" id="fName" name="fName" tabindex="1"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lastName">
+                                <label for="lName">Last Name:</label>
+                                <input type="text" placeholder="Last Name" id="lName" name="lName" tabindex="2"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="email">
+                            <span class="invalidEmail">Provide correct e-mail address</span>
+                            <label for="userEmail" class="required">Enter your email address</label>
+                            <input type="email" id="userEmail" name="user[userEmail]" required="required" placeholder data-error="userEmail.error" tabindex="3" class="empty">
+                            <div class="emailLoading">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="emailCaret"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="phoneNumber">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" placeholder="Phone number" id="phone" name="phone" tabindex="4"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="password">
+                                <label for="pass">Password:</label>
+                                <input type="text" placeholder="Password" id="pass" name="pass" tabindex="5"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="confirmPassword">
+                                <label for="confirmPass">Confirm Password:</label>
+                                <input type="text" placeholder="Confirm Password" id="confirmPass" name="confirmPass" tabindex="6"/>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </form>
 
         <section class="formConfirm">
             <div>
-                <button class="createBtn">Create Account</button>
-                <div class="accountQ">Already have an account?<a href="#">Log in</a></div>
+                <button type= "submit" class="createBtn">Create Account</button>
+                <div class=" fontMain accountQ">Already have an account?<a href="#">Log in</a></div>
             </div>
         </section>
     </main>
-
-	<script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./main.js"></script>
   </body>
 </html>
