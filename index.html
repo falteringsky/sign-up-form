@@ -18,14 +18,14 @@
     </div>
     <main>
         <section class="fontMain introTxt">
-            <p class=" fontMain topTxt">This is not a real online service! You know you need somwthing like this in your life to help you realize your deepest dreams. 
+            <p class="fontMain topTxt">This is not a real online service! You know you need somwthing like this in your life to help you realize your deepest dreams. 
                 Sign up <span class="itali">now</span> to get started.</p>
-            <div class=" fontMain smallTxt">You <span class="itali">know</span> you want to.</div>
+            <div class="fontMain smallTxt">You <span class="itali">know</span> you want to.</div>
         </section>
 
         <form action="#" method="get" id="signup" class="form">
             <section class="frm">
-                <div class="fontMain formIntro">Let's do this!</div>
+                <div class="fontMain formIntro">Welcome to The City of Dreams</div>
                 <div class="formInputs">
                     <ul>
                         <li>
@@ -44,20 +44,21 @@
                         </li>
                         <li>
                             <div class="form-field email">
-                                <span class="invalidEmail">Provide correct e-mail address</span>
+                                <!-- <span class="invalidEmail">Provide correct e-mail address</span> -->
                                 <label for="userEmail" class="required">Enter your email address</label>
-                                <input type="email" id="userEmail" name="user[userEmail]" required="required" placeholder data-error="userEmail.error" tabindex="3" class="empty">
-                                <div class="emailLoading">
+                                <input type="email" id="userEmail" name="user[userEmail]" required="required" placeholder ="Email" tabindex="3" class="empty">
+                                <small></small>
+                                <!-- <div class="emailLoading">
                                     <div></div>
                                     <div></div>
                                 </div>
                                 <div class="emailCaret"></div>
-                            </div>
+                            </div> -->
                         </li>
                         <li>
                             <div class="phoneNumber">
                                 <label for="phone">Phone Number:</label>
-                                <input type="number" placeholder="Phone number" id="phone" name="phone" tabindex="4"/>
+                                <input placeholder="Phone number" id="phone" name="phone" maxlength="16" tabindex="4"/>
                                 <small></small>
                             </div>
                         </li>
@@ -80,9 +81,9 @@
                 </div>
             </section>
             <section class="formConfirm">
-                <div>
+                <div class="formSubmit">
                     <button type= "submit" class="createBtn">Create Account</button>
-                    <div class=" fontMain accountQ">Already have an account?<a href="#">Log in</a></div>
+                    <div class=" fontMain accountQ">Already have an account? <a href="#">Log in</a></div>
                 </div>
             </section>
         </form>
