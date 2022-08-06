@@ -72,17 +72,30 @@ main {
     background-color: #ff6000;
     width: 100%;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
+    padding: 40px;
 }
 
 .formIntro {
     display: flex;
     height: 40px;
-    background-color: antiquewhite;
-    padding: 6px 10px;
+    /* background-color: antiquewhite; */
+    padding: 6px 40px;
     margin-top: 5px;
     margin-bottom: 15px;
     justify-content: flex-start;
     align-items: center;
+}
+
+.fontMain.topTxt {
+    width: 700px;
+}
+
+.fontMain.smallTxt {
+    margin-bottom: 20px;
 }
 
 .form {
@@ -91,27 +104,39 @@ main {
     /* background-color: #28a745; */
 }
 
+.frm {
+    height: 300px;
+}
+
 .formConfirm {
     background-color: #ff6000;
     width: 100%;
     height: 100%;
+    padding: 40px;
+}
+
+.formSubmit {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .formInputs {
     display: flex;
     font-size: 1.3rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 40px;
 }
 
-.form li > .firstName, .lastName, .phoneNumber, .password, .confirmPassword {
+.form li > .firstName, .lastName, .email, .phoneNumber, .password, .confirmPassword {
     border: none; 
     border-bottom: 0;
     margin-bottom: 0px; 
     position: relative; 
 }
 
-/* .form li:last-child {
-    border-bottom: 1px solid #ccc;
-} */
 
 ul {
     display: flex;
@@ -119,14 +144,15 @@ ul {
     list-style: none;
     gap: 20px;
     padding: 5px;
+    width: 1000px;
 }
 
-.firstName >label, .lastName>label, .phoneNumber>label, .password >label, .confirmPassword >label{
+.firstName >label, .lastName>label, .email>label, .phoneNumber>label, .password >label, .confirmPassword >label{
     display: block; 
     border: 0;
 }
  
-.firstName>input, .lastName >input, .phoneNumber >input, .password > input, .confirmPassword > input{ 
+.firstName>input, .lastName >input, .email>input, .phoneNumber >input, .password > input, .confirmPassword > input{ 
    display: block;
    font-size: .8125em;;
     width: 300px; 
@@ -137,7 +163,7 @@ ul {
     border-bottom: 2px solid #000
 }
  
-.firstName >label, .lastName>label, .phoneNumber>label, .password >label, .confirmPassword >label {
+.firstName >label, .lastName>label, .email>label, .phoneNumber>label, .password >label, .confirmPassword >label {
     font-size: .8125em;/* 13/16 */
     position: absolute; 
     top: -.3em;
@@ -186,7 +212,8 @@ small {
     flex-wrap: wrap;
 }
 
-@keyframes emailCaret-anim{
+
+/*@keyframes emailCaret-anim{
     from   {
         opacity: 1;
 }
@@ -297,3 +324,4 @@ input[type=email] {
     top: 8px;
     width: 4px;
 }
+*/
