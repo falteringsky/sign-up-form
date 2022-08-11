@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 743px;
+    height: 773px;
     width: 650px;
     background-image: url(./images/small-header.jpg);
 }
@@ -114,7 +114,9 @@ main {
 }
 
 .frm {
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 335px;
 }
 
 .formConfirm {
