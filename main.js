@@ -186,6 +186,30 @@ const showSuccess = (input) => {
     error.textContent = '';
 };
 
+/*Validate forms before inputting*/
+form.addEventListener('submit', function (e) {
+    // prevent the form from submitting
+    e.preventDefault();
+
+    // validate forms
+    let isFirstNameValid = checkFirstName(),
+        isLastNameValid = checkLastName(),
+        isEmailValid = checkEmail(),
+        isPasswordValid = checkPassword(),
+        isConfirmPasswordValid = checkConfirmPassword();
+
+    let isFormValid = isFirstNameValid &&
+        isLastNameValid &&
+        isEmailValid &&
+        isPasswordValid &&
+        isConfirmPasswordValid;
+
+    // submit to the server if the form is valid
+    if (isFormValid) {
+
+    }
+});
+
 //timer for improving performance by waiting to validate form inputs until user has stopped typing for 0.5s
 const debounce = (fn, delay = 500) => {
     let timeoutId;
