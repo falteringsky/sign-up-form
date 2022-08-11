@@ -18,8 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    width: 470px;
+    height: 743px;
+    width: 650px;
     background-image: url(./images/small-header.jpg);
 }
 
@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 470px;
+    width: 650px;
     background-color: aqua;
     filter: alpha(Opacity=90);
     opacity: 0.5;
@@ -57,10 +57,9 @@ body {
 }
 
 main {
-    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: 750px;
     width: 100vw;
 }
 
@@ -69,25 +68,37 @@ main {
 }
 
 .fontMain.introTxt {
-    background-color: #ff6000;
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 30px;
     padding: 40px;
+    color: yellow;
+/* Created with https://www.css-gradient.com */
+    background: #020202;
+    background: -webkit-linear-gradient(top left, #020202, #494949);
+    background: -moz-linear-gradient(top left, #020202, #494949);
+    background: linear-gradient(to bottom right, #020202, #494949);
 }
 
 .formIntro {
     display: flex;
     height: 40px;
-    /* background-color: antiquewhite; */
     padding: 6px 40px;
-    margin-top: 5px;
     margin-bottom: 15px;
     justify-content: flex-start;
     align-items: center;
+    /* Created with https://www.css-gradient.com */
+    background: #BCF9FF;
+    background: -webkit-linear-gradient(top left, #BCF9FF, #17FFFF);
+    background: -moz-linear-gradient(top left, #BCF9FF, #17FFFF);
+    background: linear-gradient(to bottom right, #BCF9FF, #17FFFF);
+}
+
+.itali {
+    font-style: italic;
 }
 
 .fontMain.topTxt {
@@ -100,8 +111,6 @@ main {
 
 .form {
     width: 100%;
-    height: 100%; /*260px*/
-    /* background-color: #28a745; */
 }
 
 .frm {
@@ -109,10 +118,13 @@ main {
 }
 
 .formConfirm {
-    background-color: #ff6000;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    height: 200px; 
     padding: 40px;
+    background: #020202;
+    background: -webkit-linear-gradient(top left, #020202, #494949);
+    background: -moz-linear-gradient(top left, #020202, #494949);
+    background: linear-gradient(to bottom right, #020202, #494949);
 }
 
 .formSubmit {
@@ -207,10 +219,35 @@ form i{
 }
 
 small {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
 }
+
+.btn {
+    width: 250px;
+    padding: 8px 18px;
+    background: red;
+    border-bottom: 2px solid red;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    }
+    
+.btn:hover {
+    background: pink;
+    cursor: pointer;
+    }
+    
+.btn:focus {
+    outline: none;
+    }
+
+    .accountQ {
+        color: yellow;
+    }
 
 
 /*@keyframes emailCaret-anim{
